@@ -1,13 +1,12 @@
 <script>
 	import Header from './components/Header/Header.svelte';
-	// export let name = "John Doe";
-	// export let bio = "I'm a software developer based in San Francisco."; 
+	import Profile from './components/Profile/Profile.svelte';
+	import Skills from './components/Skills/Skills.svelte';
+
 </script>
 
 <Header />
-<main>
-
-</main>
+<Profile />
 
 <footer>
 
