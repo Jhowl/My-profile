@@ -3,6 +3,10 @@
 </script>
 
 <div class="picture">
+	<p class="dots">
+		. . . .<br>
+		. . . .<br>
+		. . . .</p>
 	<div class="rectangle31"></div>
 	<div class="rectangle3"></div>
 	<div class="rectangle32"></div>
@@ -17,6 +21,23 @@
 		height: 404px;
 		left: 179px;
 		top: 202px;
+	}
+
+	.dots{
+		position: absolute;
+		width: 105px;
+		height: 93px;
+		left: 191px;
+		top: 231px;
+
+		font-family: 'Inconsolata';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 31px;
+
+		color: #FFFFFF;
+		z-index: 20;
 	}
 
 	.rectangle31 {
