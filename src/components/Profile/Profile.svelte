@@ -33,8 +33,6 @@
 		left: 650px;
 		top: 307px;
 
-		font-family: 'Inconsolata';
-		font-style: normal;
 		font-weight: 600;
 		font-size: 48px;
 		line-height: 50px;
@@ -49,8 +47,6 @@
 		left: 650px;
 		top: 368px;
 
-		font-family: 'Inconsolata';
-		font-style: normal;
 		font-weight: 600;
 		font-size: 36px;
 		line-height: 38px;
@@ -65,8 +61,6 @@
 		left: 650px;
 		top: 456px;
 
-		font-family: 'Inconsolata';
-		font-style: normal;
 		font-weight: 600;
 		font-size: 24px;
 		line-height: 25px;

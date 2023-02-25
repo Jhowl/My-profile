@@ -30,14 +30,12 @@
 		left: 191px;
 		top: 231px;
 
-		font-family: 'Inconsolata';
-		font-style: normal;
 		font-weight: 700;
 		font-size: 30px;
 		line-height: 31px;
 
 		color: #FFFFFF;
-		z-index: 20;
+		z-index: 10;
 	}
 
 	.rectangle31 {

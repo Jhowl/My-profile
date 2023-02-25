@@ -7,7 +7,12 @@
 
 <Header />
 <Profile />
+<Skills />
 
 <footer>
 
 </footer>
+
+<style>
+
+</style>
