@@ -42,7 +42,7 @@
 
 <style>
 	.skills {
-		/* position: absolute; */
+		position: absolute;
 		width: 1187px;
 		height: 300px;
 		left: -28px;
@@ -81,7 +81,7 @@
 	.skill-rectangle2 {
 		box-sizing: border-box;
 
-		position: absolute;
+		/* position: absolute; */
 		width: 105px;
 		height: 105px;
 		left: -28px;
