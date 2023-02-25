@@ -38,7 +38,7 @@
 	<div class="toggle">
 		<input type="checkbox" id="toggle" on:change={toggleTheme}>
 		<label for="toggle">
-			<img src="icons/light-bulb-icon.svg" alt="Light Mode" class="light-mode">
+			<img src="icons/icon-light-bulb.svg" alt="Light Mode" class="light-mode">
 		</label>
 	</div>
 
@@ -60,7 +60,7 @@
 	}
 
 	.header-title {
-		position: absolute;
+		position: relative;
 		width: 144px;
 		height: 50px;
 		left: 104px;

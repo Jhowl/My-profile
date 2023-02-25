@@ -9,7 +9,7 @@
 		<h2 class="profile-about-title">Jhonatan Silva</h2>
 		<h3 class="profile-about-subtitle">but can call me Jhowl</h3>
 		<p class="profile-about-text">
-				Back-end developer, passionate about technology and programming. I have been working with web development for 10 years, 
+				Back-end developer, passionate about technology and programming. I have been working with web development for 10 years,
 				I have experience with PHP, NodeJS, ReactJS, React Native, VueJS, Laravel, CodeIgniter, MySQL, MongoDB, PostgreSQL, Docker, AWS, Digital Ocean, Linux, Git, among others.
 		</p>
 	</div>
@@ -19,7 +19,7 @@
 
 <style>
 	.profile {
-		position: absolute;
+		position: relative;
 		width: 1047px;
 		height: 619px;
 		left: 118px;

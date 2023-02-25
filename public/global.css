@@ -3,8 +3,7 @@ html, body {
 	width: 100%;
 	height: 100%;
 	font-style: normal;
-
-    font-family: 'Inconsolata', monospace;
+  font-family: 'Inconsolata', monospace;
 }
 
 body {
@@ -12,7 +11,7 @@ body {
 	position: relative;
 	width: 1280px;
 	height: 2751px;
-	
+
 	background: #000002;
 	color: #FFFFFF;
 }
