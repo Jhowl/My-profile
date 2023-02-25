@@ -15,9 +15,15 @@
 		isDarkMode = !isDarkMode;
 		document.body.classList.toggle("light-mode", isDarkMode);
 	}
+
+	let scrollPosition = 0;
+
+  window.addEventListener('scroll', () => {
+    scrollPosition = window.pageYOffset;
+  });
 </script>
 
-<header class="header">
+<header class="header {scrollPosition > 0 ? 'navbar navbar--scrolled' : 'navbar'}">
 	<h1 class="header-title">{title}</h1>
 	<nav class="header-nav">
 		<ul>
@@ -28,7 +34,7 @@
 			{/each}
 		</ul>
 	</nav>
-	
+
 	<div class="toggle">
 		<input type="checkbox" id="toggle" on:change={toggleTheme}>
 		<label for="toggle">
@@ -59,14 +65,6 @@
 		height: 50px;
 		left: 104px;
 		top: 0px;
-
-		font-family: 'Inconsolata';
-		font-style: normal;
-		font-weight: 700;
-		font-size: 48px;
-		line-height: 50px;
-
-		color: #FFFFFF;
 	}
 
 	.header-nav {
@@ -76,8 +74,6 @@
 		left: 395px;
 		top: 14px;
 
-		font-family: 'Inconsolata';
-		font-style: normal;
 		font-weight: 700;
 		font-size: 24px;
 		line-height: 25px;
@@ -135,6 +131,25 @@
 		border: 1px solid #FFFFFF;
 		transform: rotate(90deg);
 	}
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    /* other styles... */
+  }
+
+  .navbar--scrolled {
+		width: 100%;
+		height: 116px;
+		left: 0px;
+		top: 0px;
+
+    z-index: 10;
+
+  }
 
 	/* .toggle span:before {
 		content: "🌙";
