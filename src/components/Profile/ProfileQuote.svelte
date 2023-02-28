@@ -22,11 +22,10 @@
     display: flex;
     display: flex;
     flex-direction: row;
-
-    /* border: #FFFFFF 1px solid; */
 	}
 
 	.profile-quote-text{
+    width: 80%;
 		font-weight: 700;
 		font-size: 24px;
 		line-height: 25px;
@@ -36,9 +35,9 @@
 	}
 
   .icons-quote{
+    position: relative;
     width: 300px;
     height: 150px;
-    position: relative;
     /* border: #FFFFFF 1px solid; */
   }
 
@@ -48,8 +47,8 @@
 		position: absolute;
 		width: 64px;
 		height: 39px;
-		left: 30px;
-		top: 82px;
+		left: 230px;
+		top: 56px;
 
 		background: #000002;
 		border: 2px solid #DEDEDE;
@@ -62,8 +61,8 @@
 		position: absolute;
 		width: 64px;
 		height: 68px;
-		left: 8px;
-		top: 36px;
+		left: 208px;
+		top: 10px;
 
 		background: #000002;
 		border: 2px solid #DEDEDE;

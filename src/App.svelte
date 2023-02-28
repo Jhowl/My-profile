@@ -9,7 +9,7 @@
 <Header />
 <Profile />
 <Skills />
-<Projects />
+<!-- <Projects /> -->
 <Contact />
 
 <footer>
@@ -20,9 +20,9 @@
 
 <style>
   footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    position: relative;
+    /* left: 0;
+    bottom: 0; */
     width: 100%;
     text-align: center;
     background-color: #333333;

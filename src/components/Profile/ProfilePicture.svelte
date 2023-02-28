@@ -17,11 +17,11 @@
 <style>
 	.picture {
 		position: relative;
-		width: 448px;
-		height: 404px;
-    padding: 0 6rem;
-    top: -10rem;
-    left: -5rem;
+		width: 100%;
+		height: 100%;
+
+    bottom: 6em;
+    left: 13rem;
 	}
 
 	.dots{
