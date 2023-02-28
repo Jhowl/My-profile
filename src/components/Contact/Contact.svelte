@@ -3,6 +3,7 @@
 </script>
 
 <div class="contact">
+
   <form action="https://formspree.io/f/xaylqzqo" method="POST">
     <input type="text" name="name" placeholder="Your name">
     <input type="email" name="_replyto" placeholder="Your email">
@@ -10,23 +11,23 @@
     <button type="submit">Send</button>
   </form>
 </div>
+
 <style>
   .contact {
     position: relative;
-    width: 1181px;
-    height: 561px;
-    left: 56px;
-    top: 2090px;
+    width: 100%;
+    margin-bottom: 50px;
   }
 
-   form {
-    width: 745px;
-    height: 39px;
-    left: 124px;
-    top: 2296px;
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   input, textarea {
+    width: 100%;
     margin-top: 20px;
     color: white;
     background: rgba(217, 217, 217, 0.4);
@@ -36,16 +37,13 @@
   input {
     width: 745px;
     height: 39px;
-    left: 124px;
-    top: 2357px;
   }
 
   textarea {
     width: 745px;
     height: 233px;
-    left: 124px;
-    top: 2418px;
     padding-top: 10px;
+    margin-bottom: 30px;
   }
 
   input::placeholder, textarea::placeholder{

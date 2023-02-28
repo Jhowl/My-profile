@@ -16,11 +16,12 @@
 
 <style>
 	.picture {
-		position: absolute;
-		width: 448px;
-		height: 404px;
-		left: 179px;
-		top: 202px;
+		position: relative;
+		width: 100%;
+		height: 100%;
+
+    bottom: 6em;
+    left: 13rem;
 	}
 
 	.dots{
@@ -28,7 +29,7 @@
 		width: 105px;
 		height: 93px;
 		left: 191px;
-		top: 231px;
+		top: 183px;
 
 		font-weight: 700;
 		font-size: 30px;
@@ -40,7 +41,6 @@
 
 	.rectangle31 {
 		box-sizing: border-box;
-
 		position: absolute;
 		width: 309px;
 		height: 309px;

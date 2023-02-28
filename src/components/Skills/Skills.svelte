@@ -3,118 +3,124 @@
 </script>
 
 <div class="skills">
-	<div class="title">
+	<div class="skills-header">
 		<div class="skill-rectangle1"></div>
 		<div class="skill-rectangle2"></div>
-		<h2>Skills.</h2>
+		<h2 class="skill-title">skills.</h2>
 	</div>
 
-	<div class="skill-beginner">
-		<h2>Basic</h2>
-		<button class="btn-white">C#</button>
-		<button class="btn-white">C++</button>
-		<button class="btn-white">Java</button>
-	</div>
+  <div class="skills-container">
+      <div class="skill-item">
+        <h2>Basic</h2>
+        <button class="btn-white">C#</button>
+        <button class="btn-white">C++</button>
+        <button class="btn-white">Java</button>
+      </div>
 
-	<div class="skill-intermediate">
-		<h2>Intermediate</h2>
-		<button class="btn-orange-dark">Python</button>
-		<button class="btn-orange-dark">React</button>
-		<button class="btn-orange-dark">Svelte</button>
-		<button class="btn-orange-dark">HTML</button>
-		<button class="btn-orange-dark">CSS</button>
-		<button class="btn-orange-dark">Go</button>
-		<button class="btn-orange-dark">Docker</button>
-	</div>
+      <div class="skill-item">
+        <h2>Intermediate</h2>
+        <button class="btn-orange-dark">Python</button>
+        <button class="btn-orange-dark">React</button>
+        <button class="btn-orange-dark">Svelte</button>
+        <button class="btn-orange-dark">HTML</button>
+        <button class="btn-orange-dark">CSS</button>
+        <button class="btn-orange-dark">Go</button>
+        <button class="btn-orange-dark">Docker</button>
+      </div>
 
-	<div class="skill-advanced">
-		<h2>Advanced</h2>
-		<button class="btn-orange-glow">NodeJs</button>
-		<button class="btn-orange-glow">Javascript</button>
-		<button class="btn-orange-glow">PHP</button>
-		<button class="btn-orange-glow">Wordpress</button>
-		<button class="btn-orange-glow">Rest API</button>
-		<button class="btn-orange-glow">Woocommerce</button>
-		<button class="btn-orange-glow">MongoDB</button>
-		<button class="btn-orange-glow">MySQL</button>
-	</div>
-</div>
+      <div class="skill-item">
+        <h2>Advanced</h2>
+        <button class="btn-orange-glow">NodeJs</button>
+        <button class="btn-orange-glow">Javascript</button>
+        <button class="btn-orange-glow">PHP</button>
+        <button class="btn-orange-glow">Wordpress</button>
+        <button class="btn-orange-glow">Rest API</button>
+        <button class="btn-orange-glow">Woocommerce</button>
+        <button class="btn-orange-glow">MongoDB</button>
+        <button class="btn-orange-glow">MySQL</button>
+      </div>
+    </div>
+  </div>
 
 <style>
 	.skills {
-		position: absolute;
-		width: 1187px;
-		height: 300px;
-		left: -28px;
-		top: 947px;
+		position: relative;
+    width: 100%;
+    height: 400px;
 	}
 
-	.title {
-		/* position: absolute; */
-		width: 144px;
-		height: 50px;
-		left: 108px;
-		top: 1039px;
+  .skills-header::after {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    bottom: 2px;
+    background: white;
+    right: 0;
+    z-index: -1;
+    margin-right: 160px;
+  }
 
-		 ;
-
+	.skills-header {
+		position: relative;
 		font-weight: 700;
 		font-size: 48px;
-		line-height: 50px;
-
+    width: 100%;
 		color: #B65D00;
 	}
+
+  .skill-title {
+    position: relative;
+    left: 144px;
+    /* top: 947px;  */
+  }
 
 	.skill-rectangle1 {
 		box-sizing: border-box;
 		position: absolute;
-		width: 137px;
-		height: 69px;
-		left: 12px;
-		top: 947px;
+
+    width: 137px;
+    height: 69px;
+    left: 12px;
+    bottom: 50px;
 
 		background: #000002;
 		border: 2px solid #DEDEDE;
 		border-radius: 25px;
+    z-index: 1;
 	}
 
 	.skill-rectangle2 {
 		box-sizing: border-box;
+    width: 105px;
+    height: 105px;
+		position: absolute;
 
-		/* position: absolute; */
-		width: 105px;
-		height: 105px;
 		left: -28px;
-		top: 993px;
+    bottom: 10px;
 
 		background: #000002;
 		border: 2px solid #DEDEDE;
 		border-radius: 25px;
 	}
 
-	.skill-beginner {
-		position: absolute;
-		width: 208px;
-		height: 64px;
-		left: 109px;
-		top: 1119px;
+  .skills-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+    margin-right: 140px;
+    margin-left: 140px;
+
+  }
+
+	.skill-item {
+    position: relative;
+    width: 60%;
+    height: 100%;
 	}
 
-	.skill-intermediate {
-		position: absolute;
-		width: 288px;
-		height: 98px;
-		left: 463px;
-		top: 1119px;
-	}
-
-	.skill-advanced {
-		position: absolute;
-		width: 299px;
-		height: 128px;
-		left: 860px;
-		top: 1119px;
-	}
 
 	.btn-white{
 		background: #D9D9D9;
@@ -125,7 +131,6 @@
 		margin-top: 10px;
 		font-weight: 700;
 		font-size: 16px;
-		line-height: 17px;
 	}
 
 	.btn-orange-glow{
@@ -135,7 +140,6 @@
 		margin-top: 10px;
 		font-weight: 700;
 		font-size: 16px;
-		line-height: 17px;
 	}
 
 	.btn-orange-dark{
@@ -147,7 +151,6 @@
 		margin-top: 10px;
 		font-weight: 700;
 		font-size: 16px;
-		line-height: 17px;
 	}
 
 </style>

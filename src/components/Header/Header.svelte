@@ -24,40 +24,50 @@
 </script>
 
 <header class="header {scrollPosition > 0 ? 'navbar navbar--scrolled' : 'navbar'}">
-	<h1 class="header-title">{title}</h1>
-	<nav class="header-nav">
-		<ul>
-			{#each navOptions as option}
-			<li class="header-nav-item">
-				<a href={option.href}>{option.label}</a>
-			</li>
-			{/each}
-		</ul>
-	</nav>
+	<div class="header-wrapper">
+    <h1 class="header-title">{title}</h1>
+    <div class="nav-wrapper">
+      <nav class="header-nav">
+        <ul>
+          {#each navOptions as option}
+          <li class="header-nav-item">
+            <a href={option.href}>{option.label}</a>
+          </li>
+          {/each}
+          <li class="header-nav-item toggle">
+            <input type="checkbox" id="toggle" on:change={toggleTheme}>
+            <label for="toggle">
+              <img src="icons/icon-light-bulb.svg" alt="Light Mode" class="light-mode">
+            </label>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 
-	<div class="toggle">
-		<input type="checkbox" id="toggle" on:change={toggleTheme}>
-		<label for="toggle">
-			<img src="icons/icon-light-bulb.svg" alt="Light Mode" class="light-mode">
-		</label>
+  <div class="github-header">
+    <a href="{link}" target="_blank" rel="noopener noreferrer">
+      <img src="icons/github-icon.svg" alt="Github">
+    </a>
 	</div>
 
-	<a href="{link}" target="_blank" rel="noopener noreferrer" class="github-header">
-		<img src="icons/github-icon.svg" alt="Github">
-	</a>
-	<div class="line"></div>
 </header>
-
 <style>
 	.header {
-		position: absolute;
 		width: 100%;
 		height: 116px;
 		left: 0px;
 		top: 0px;
-
+    position: relative;
 		background: #000002;
 	}
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+  }
 
 	.header-title {
 		position: relative;
@@ -68,7 +78,6 @@
 	}
 
 	.header-nav {
-		position: absolute;
 		width: 672px;
 		height: 25px;
 		left: 395px;
@@ -77,6 +86,9 @@
 		font-weight: 700;
 		font-size: 24px;
 		line-height: 25px;
+
+    display: flex;
+    width: 100%;
 	}
 
 	 .header-nav a {
@@ -93,6 +105,7 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
+    width: 100%;
 	}
 
 	.header-nav-item {
@@ -100,13 +113,10 @@
 	}
 
 	 .toggle {
-		position: absolute;
 		width: 28.38px;
 		height: 37.3px;
 		left: 1138px;
 		top: 37.95px;
-
-		/* background: #D9D9D9; */
 	}
 
 	.toggle input[type="checkbox"] {
@@ -117,20 +127,19 @@
 		position: absolute;
 		width: 65px;
 		height: 457px;
-		left: 86.23%;
-		top: 200px;
+    top: 380px;
+    right: 5%;
 	}
 
-	.line {
-		position: absolute;
-		width: 380px;
-		height: 0px;
-		left: 77%;
-		top: 0px;
-
-		border: 1px solid #FFFFFF;
-		transform: rotate(90deg);
-	}
+  .github-header::before {
+    content: "";
+    background: white;
+    width: 1px;
+		height: 380px;
+    position: absolute;
+    top:  -420px;
+    left: 50%;
+  }
 
   .navbar {
     position: fixed;
@@ -138,7 +147,6 @@
     left: 0;
     right: 0;
     z-index: 1;
-    /* other styles... */
   }
 
   .navbar--scrolled {
@@ -148,7 +156,13 @@
 		top: 0px;
 
     z-index: 10;
+  }
 
+  .nav-wrapper {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    padding: 0 10%;
   }
 
 	/* .toggle span:before {
